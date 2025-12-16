@@ -4,6 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro </title>
+    <style>
+        body{
+            font-family: Arial, HElvetica, sans-serif;
+            background: #ffa216;
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        .container{
+            Width: 500px;
+            margin: 50px auto;
+            background: #f8c453;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+        h2{
+            text-align: center; 
+            margin-bottom: 20px;
+            color: #b16032;
+
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            background: #f8c453;
+            color: rgb(119, 54, 0);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: rgb(255, 166, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor:pointer;
+
+        }
+
+        button:hover {
+             background: #855600;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -11,15 +70,23 @@
 
         <form action="processa.php" method="POST"> 
               
+
+
             <label>Nome: </label>
             <input type="text" name="nome" required />
              
+             <br>
+
             <label>Email:</label>
             <input type="email" name="email" required />
                
+             <br>
+
              <label>Telefone:</label>
              <input type="text" name="telefone" placeholder="(00) 00000-0000" />
               
+             <br>
+
              <label>Mensagem:</label>
              <textarea name="mensagem" rows="4" required></textarea>
 
